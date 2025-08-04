@@ -20,6 +20,7 @@ A fully responsive and interactive **Hotel Booking Website** made with **HTML, C
 📂 **hotel-booking-website**  
  ├── `index.html` — Main landing page (Hotel Stay homepage)  
  ├── `login.html` — User login form  
+ ├── `rooms.html` — Rooms information
  ├── `booking.html` — Room selection interface  
  ├── `payment.html` — Room payment form  
  ├── `styles.css` — Main CSS file for layout and design  
