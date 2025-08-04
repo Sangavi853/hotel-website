@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Hotel Stay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-bg">  <!-- Add a class for the background -->
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="login(); return false;">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required minlength="6">
+            <button type="submit">Login</button>
+        </form>
+        <p id="login-error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</html>

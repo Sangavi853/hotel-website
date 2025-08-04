@@ -1,0 +1,16 @@
+{
+    "rooms": [
+        {
+            "name": "Deluxe Room",
+            "description": "Spacious and luxurious room with ocean view.",
+            "price": 2000,
+            "image": "images/room1.jpg"
+        },
+        {
+            "name": "Suite Room",
+            "description": "Premium stay with exclusive facilities.",
+            "price": 3500,
+            "image": "images/room2.jpg"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Hotel Stay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Payment Details</h2>
+        <p id="selected-room"></p>
+        <form onsubmit="processPayment(); return false;">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" placeholder="Enter card number" required>
+
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" placeholder="123" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+        <p id="payment-message"></p>
+    </div>
+
+    <script>
+        // Display selected room on payment page
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const roomName = urlParams.get("room");
+            if (roomName) {
+                document.getElementById("selected-room").innerText = "Room: " + roomName;
+            }
+        });
+
+        function processPayment() {
+            alert("Payment successful! Booking confirmed.");
+            window.location.href = "index.html"; // Redirect to home after payment
+        }
+    </script>
+</body>
+</html>
